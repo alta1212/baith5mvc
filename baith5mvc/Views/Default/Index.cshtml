@@ -1,0 +1,14 @@
+﻿@model IEnumerable<baith5mvc.Models.sv> 
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Danh sách sinh viên</h2>
+<form>
+    @foreach (var item in Model)
+    {
+        <a>@item.msv</a><br><a>@item.hoten</a>
+    }
+</form>
+
